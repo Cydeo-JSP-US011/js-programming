@@ -169,3 +169,77 @@ console.log(reverseString("Hello World!")); // "!dlroW olleH"
 
 console.log("------------------------------");
 
+function wordBreak(s, wordDict) {
+    const n = s.length;
+    const dp = new Array(n + 1).fill(false);
+    dp[0] = true; // empty string can always be segmented
+    
+    for (let i = 1; i <= n; i++) {
+        for (let j = 0; j < i; j++) {
+            if (dp[j] && wordDict.includes(s.substring(j, i))) {
+                dp[i] = true;
+                break;
+            }
+        }
+    }
+    
+    return dp[n];
+}
+
+// Test with the given examples
+const dictionary = ["i", "like", "sam", "sung", "samsung", "mobile", "ice", "cream", "icecream", "man", "go", "mango"];
+
+console.log(wordBreak("ilike", dictionary)); // true
+console.log(wordBreak("ilikesamsung", dictionary)); // true
+
+console.log("-------------------------------");
+
+function countDistinctSubstrings(str) {
+    let n = str.length;
+    let ans = 0;
+    let cnt = new Array(26).fill(0);
+    let i = 0, j = 0;
+    
+    while (i < n) {
+        if (j < n && cnt[str[j].charCodeAt(0) - 'a'.charCodeAt(0)] === 0) {
+            cnt[str[j].charCodeAt(0) - 'a'.charCodeAt(0)]++;
+            ans += (j - i + 1);
+            j++;
+        } else {
+            cnt[str[i].charCodeAt(0) - 'a'.charCodeAt(0)]--;
+            i++;
+        }
+    }
+    
+    return ans;
+}
+
+console.log(countDistinctSubstrings("gffg"));
+
+console.log(countDistinctSubstrings("gfg"));
+
+console.log("-------------------------------");
+
+function diagonalDifference(matrix) {
+    let primarySum = 0;
+    let secondarySum = 0;
+    let n = matrix.length;
+
+    for (let i = 0; i < n; i++) {
+        primarySum += matrix[i][i];                  // left to right diagonal
+        secondarySum += matrix[i][n - 1 - i];        // right to left diagonal
+    }
+
+    return Math.abs(primarySum - secondarySum);
+}
+
+// Example usage:
+const matrix = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [9, 8, 9]
+];
+
+console.log(diagonalDifference(matrix));
+
+

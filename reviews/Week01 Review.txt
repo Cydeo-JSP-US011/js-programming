@@ -23,6 +23,37 @@ Dynamicly Type Programming Languages: JavaScript, Python
         Interperter ====> during the runtimew time
 
 
+
+Promises: Future value/error
+
+----------------------------------------
+
+Task01: 
+        Make a promise to return the value 
+        Step1
+        Step2
+        Step3
+        Step4
+        Step5 
+
+Task02:
+        Step1
+        Step2
+        Step3 (need the value of Task01 returning) await for the promised value
+        Step4
+
+Task03:
+        Step1
+        Step2 (need the value of Task01 returning) await for the promised value
+        Step3 
+        Step4
+
+Task04:
+        Step1
+        Step2
+        Step3 (need the value of Task01 returning) await for the promised value
+
+
 ------------------------------
 
 Word Break Problem
@@ -60,4 +91,15 @@ Create a function that can Count of substrings having all distinct characters
             Among them, the highlighted ( “g“, “gf“, “f“, “fg“, “g” ) consists of distinct characters only.
 
 
+----------------------------------------
+
+Given a square matrix, calculate the absolute difference between the sums of its diagonals.
+
+For example, the square matrix  is shown below:
+        1 2 3
+        4 5 6
+        9 8 9
+
+    Output:
+        The absolute difference is: 2
 
