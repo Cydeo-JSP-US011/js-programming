@@ -1,0 +1,24 @@
+Week01 Review:
+	Topics:
+		Core javaScript
+		
+		Asynchronious Programming:
+				Promises
+				Async & Await
+
+		Perplexity Spaces
+
+
+Staticaly Type Programming Languages: Java, C#, TypeScript, C++
+
+        int variableName;
+
+        Compiler ====> during the compile time
+
+
+Dynamicly Type Programming Languages: JavaScript, Python
+
+        let variableName;
+
+        Interperter ====> during the runtimew time
+
