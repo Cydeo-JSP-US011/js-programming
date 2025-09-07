@@ -24,7 +24,8 @@ Dynamicly Type Programming Languages: JavaScript, Python
 
 
 
-Promises: Future value/error
+Promises: Future value/error (50/50)
+
 
 ----------------------------------------
 

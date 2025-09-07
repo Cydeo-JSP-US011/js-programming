@@ -21,6 +21,15 @@ async function clickElement(locator){
     });
 }
 
-
 console.log("------------------------------");
 
+
+async function test(){
+
+    //await clickElement("valid-locator");
+    await clickElement("invalid-locator");
+
+}
+
+
+test();
